@@ -169,6 +169,9 @@
             // Num-Subtract, or -
             '-': 109,
             subtract: 109,
+            // Num-Subtract, or - on Mac OS X
+            '-': 189,
+            subtract: 189,
             'num-.': 110,
             'num-period': 110,
             'num-dot': 110,
@@ -183,7 +186,6 @@
             // Comma, or ,
             ',': 188,
             comma: 188,
-            //'-': 189, //???
             // Period, or ., or full-stop
             '.': 190,
             period: 190,
@@ -501,10 +503,10 @@
             var element = realTypeOf(realSelector, 'element') ? realSelector : $$(realSelector, realSelectorContext);
             var callback = jwerty.event(jwertyCode, callbackFunction, realcallbackContext);
             $b( element, callback );
-            
+
             return {unbind:function(){ $u( element, callback ) }};
         },
-        
+
         /**
          * jwerty.fire
          *
