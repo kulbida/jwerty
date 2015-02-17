@@ -575,6 +575,13 @@ test('Test key binding without element, binding to `document`', function () {
     buildEvent(32, false, false, false, false);
 });
 
+test('Test forward-slash for Mac numpad keyboards', function () {
+    expect(1);
+
+    jwerty.key('/', this.assertjwerty);
+    buildEvent(111, false, false, false, false);
+});
+
 
 test('Test unbinding', function(){
     var firings = 0

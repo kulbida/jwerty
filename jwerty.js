@@ -191,7 +191,8 @@
             period: 190,
             'full-stop': 190,
             // Slash, or /, or forward-slash
-            '/': 191,
+            // '/': 191,
+            '/': 111,
             slash: 191,
             'forward-slash': 191,
             // Tick, or `, or back-quote
